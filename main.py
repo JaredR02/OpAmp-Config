@@ -75,12 +75,3 @@ col_names = ('Load', 'No Load', 'R1', 'R2', 'R3', 'R4')
 print(tabulate(optimal, headers=col_names, tablefmt="grid", showindex="always"))
 end = time.time()
 print("The time of execution of above program is :", (end - start) * 10 ** 3, "ms")
-
-
-'''print("The optimal resistor combo is", 
-      " \n ra: ", optimal[1], 
-      " \n rb: ", optimal[2],
-      " \n rc: " ,optimal[3], 
-      " \n rd: " ,optimal[4],
-      " \n This gives a Vo of ", "{:.4f}".format(optimal[0]), "V and a error of ", "{:.4f}".format(optimalError*100), "%")
-'''
